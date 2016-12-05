@@ -8,6 +8,14 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-material-design.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+    <style>
+      body{
+        padding-top: 50px;
+        background-color: #ffffff;
+      }
+    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queris -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,14 +27,14 @@
   <body>
 
    <!-- Put Navigation bar here -->
-   <div class="navbar navbar -fixed-top navbar-default" role="navigation">
+   <div class="navbar navbar-fixed-top navbar-default" role="navigation">
      <div class="container">
        <div class="navbar-header">
-         <button type="button" class="navbar-toogle" data-toggle="collapse" data-target=".navbar-collapse">
+         <button type="button" class="navbar-toogle" data-toggle="collapse" data-target="navbar-collapse">
            <span class="sr-only">Toggle navigation</span>
-           <span class="icon-bar"/>
-           <span class="icon-bar"/>
-           <span class="icon-bar"/>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
          </button>
          <a href="#" class="navbar-brand">Training Bootstrap</a>
        </div>
@@ -85,8 +93,13 @@
 
 
    <!-- jQuery (necessary for Bootstrap's Javascript plugins) -->
-   <script src="js/jquery-2.2.5.js"></script>
+   <script src="js/jquery-3.1.1.js"></script>
    <!-- Include all compiled plugins (below), or include individual files as needed -->
    <script src="js/bootstrap.min.js"></script>
+   <script src="js/material.min.js"></script>
+   <script src="js/ripples.min.js"></script>
+   <script>
+     $.material.init();
+   </script>
   </body>
  </html>
